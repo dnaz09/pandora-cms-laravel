@@ -22,5 +22,7 @@ Route::post('/survey/socials/create', 'SurveyController@socials');
 Route::post('/survey/ads/create', 'SurveyController@ads');
 Route::post('/survey/products/create', 'SurveyController@products');
 Route::get('/branches', 'BranchController@fetch_branches');
-
+Route::post('/imei/check', 'IMEIController@check');
+Route::post('/imei/register', 'IMEIController@register');
 Route::post('/create', 'SurveyController@store');
+Route::post('/send-email', 'PhpmailerController@sendEmail');
